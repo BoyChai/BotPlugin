@@ -13,7 +13,7 @@ func readConfig() (handler, error) {
 	var all handler
 	var my handler
 	var n handler
-	data, err := ioutil.ReadFile("config.yaml")
+	data, err := ioutil.ReadFile("./plugin/config.yaml")
 	if err != nil {
 		return n, err
 	}
